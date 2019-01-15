@@ -46,10 +46,13 @@ Pour lister les ports TCP sur lesquels la machine virtuelle écoute il faut util
 
 A. `nano /etc/ssh/sshd_config` pour modifier le ficher, supprimer le diese devant "port" et mettre 2222.
 Puis redémarrez le serveur SSH pour que le changement prenne effet: `systemctl restart sshd`
+
 La connection au serveur en utilisant le client SSH ne fonctionne pas car il faut autoriser les connexions sur le port TCP 2222 :
 `firewall-cmd --add-port=2222/tcp --permanent`
+Puis redémarrez le serveur SSH pour que le changement prenne effet: `systemctl restart sshd`
 
-B.
+B.intallation de netcat : `yum install nmap-ncat`
+
 
 
 
