@@ -18,6 +18,8 @@ c. Pour afficher la table de routage il faut taper la commande
 Pour le ping et l'affche de la table de routage cf plus haut
 Pour télécharger un ficher depuis la VM il faut taper la commande
   `curl -SLO l'adresse a télécharger`
+  
+Pour utiliser la commande `dig``
 
 ## Notion de ports et SSH
 
@@ -37,3 +39,12 @@ Pour lister les ports TCP sur lesquels la machine virtuelle écoute il faut util
 
 
 ### SSH
+
+
+
+
+
+
+
+
+
