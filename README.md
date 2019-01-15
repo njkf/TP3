@@ -19,7 +19,12 @@ Pour le ping et l'affche de la table de routage cf plus haut
 Pour télécharger un ficher depuis la VM il faut taper la commande
   `curl -SLO l'adresse a télécharger`
   
-Pour utiliser la commande `dig``
+Pour utiliser la commande `dig` il faut d'abord l'installer. 
+J'ai utilisé:
+`sudo yum install bind-util`
+Puis:
+`dig ynov.com`
+`dig google.com`
 
 ## Notion de ports et SSH
 
@@ -31,12 +36,7 @@ Pour lister les ports TCP sur lesquels la machine virtuelle écoute il faut util
 * -n pour le numéro du port
 * -p pour l'application qui écoute
 
-
-
-
-
-
-
+![screen_Nmap](/Images/1.png)
 
 ### SSH
 
