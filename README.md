@@ -53,6 +53,18 @@ Puis redémarrez le serveur SSH pour que le changement prenne effet: `systemctl 
 
 B.intallation de netcat : `yum install nmap-ncat`
 
+## Routage statique
+
+### Préparation des hôtes
+
+PC1 et PC2 peuvent se ping (carte Ethernet sous réseau 12), VM1 et PC1 se ping mutuellement etVM2 et PC2 se piing mutuellement comme dans le TP précédent.
+
+Activation du routage puis configuration. 
+
+Grace a `route add 192.168.102.0/24 mask 255.255.255.0 192.168.112.2` on indique comment acceder au réseau 2 au PC1. On utilise la meme commande mais avec l'autre adresse pour le PC2.
+
+Pour les VM : `ip route add 192.168.112.0/30 via 192.168.101.1 dev enp0s8` puis meme principe qu'avec les PCs.
+
 
 
 
